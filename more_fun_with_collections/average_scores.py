@@ -50,12 +50,15 @@ def average_scores(scores_dict):
     :param scores_dict: a dictionary of test scores
     :return: return average of all test scores
     """
-    num_scores = len(scores_dict)
-    total = 0
-    for x in scores_dict:
-        total = total + scores_dict.get(x)
-    average = total/num_scores
-    print(average)
+    try:
+        num_scores = len(scores_dict)
+        total = 0
+        for x in scores_dict:
+            total = total + scores_dict.get(x)
+        average = total/num_scores
+        print(average)
+    except ZeroDivisionError:
+        raise ZeroDivisionError("Exception!")
     return average
 
 if __name__ == '__main__':
