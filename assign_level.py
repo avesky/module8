@@ -23,9 +23,6 @@ def switch_level(new_level):
 
 
 if __name__ == "__main__":
-    new_level = "Novice"
-    switch_level(new_level)
-    new_level = "Beginner"
-    switch_level(new_level)
-    new_level = "Experienced"
-    switch_level(new_level)
+    switch_level("Novice")
+    switch_level("Beginner")
+    switch_level("Experienced")
